@@ -44,6 +44,8 @@ for (i=0; i<n-1; i++ ,pa++){
 }
 cout<<setw(3)<<*pa<<endl;
 
+pa -= (n-1);
+
 delete []pa;
 return 0;
 }
