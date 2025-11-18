@@ -7,13 +7,18 @@ using namespace std;
 int main(int argc,char *argv[]){
   int *pa, *pb, i, temp;
   int n;
+
+  n=argc - 1; 
+
+  if(n <= 0){
   cout << "How many numbers?";
-  cin >> n;
+  return 1; 
+  }
+
   pa = new int [n];
 
-  for ( i = 0; i < n; i ++, pa++){
-    cout<<"Input "<<":";
-    cin>>*pa;
+  for ( i = 0; i < argc; i ++, pa++){
+    *pa = atoi(argv[i]);)
   }
   
   pa = pa - n ;
