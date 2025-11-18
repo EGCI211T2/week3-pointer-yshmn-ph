@@ -18,7 +18,7 @@ int main(int argc,char *argv[]){
   pa = new int [n];
 
   for ( i = 0; i < argc; i ++, pa++){
-    *pa = atoi(argv[i]);)
+    *pa = atoi(argv[i]);
   }
   
   pa = pa - n ;
